@@ -26,6 +26,6 @@ class PlagiarismChecker
             $results[] = $this->dataProvider->getResults($sentence);
         }
 
-        return new Report($results);
+        return new Report(array_merge(...$results));
     }
 }

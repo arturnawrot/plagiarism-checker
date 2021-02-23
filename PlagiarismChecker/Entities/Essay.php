@@ -16,16 +16,7 @@ class Essay
     public function getSentences()
     {
         $sentenceHelper = new SentenceHelper();
-        $rawSentences = $sentenceHelper->split($this->fromString());
-
-        $sentences = [];
-
-        foreach($rawSentences as $sentence)
-        {
-            $sentences[] = new Sentence($sentence);
-        }
-
-        return $sentences;
+        return $sentenceHelper->split($this->fromString());
     }
 
     public function fromString()

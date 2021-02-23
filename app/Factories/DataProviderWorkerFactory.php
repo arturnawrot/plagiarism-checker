@@ -5,12 +5,13 @@ namespace App\Factories;
 use Arturek1\PlagiarismChecker\DataProviders\DataProviderPool;
 use Arturek1\PlagiarismChecker\DataProviders\DataProviderWorker;
 use GuzzleHttp\Client;
+use App\Models\Worker;
 
 class DataProviderWorkerFactory
 {
     public static function create()
     {
-        $sockets = ['127.0.0.1:5050', 'localhost:5050'];
+        $sockets = ['172.17.0.1:5000'];
 
         $freeWorkers = [];
 

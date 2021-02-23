@@ -23,7 +23,7 @@ class Report
         foreach($this->results as $result)
         {
             if($result->isPlagiarized()) {
-                $this->plagiarizedResults[] = $result;
+                $plagiarizedResults[] = $result;
             }
         }
 
@@ -32,8 +32,15 @@ class Report
 
     public function getAveragePlagiarismScore()
     {
+        $scores = [];
+
+        foreach($this->getPlagiarizedResults() as $result)
+        {
+            $scores[] = $result->getPlagiarizmScore();
+        }
+
         if(count($this->results) > 0) {
-            return array_sum($this->results) / count($this->results);
+            return array_sum($scores) / count($this->results);
         }
 
         return 0;
