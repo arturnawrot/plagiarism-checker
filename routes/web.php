@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PlagiarismController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +20,3 @@ Route::get('/', function () {
 Route::get('/tool', function () {
     return view('tool');
 });
-
-Route::post('/tool', [PlagiarismController::class, 'index']);
-
-Route::get('/test/{query}', [PlagiarismController::class, 'index']);

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+body {
+    font-family: "Montserrat";
+}
+.navbar, .nav-item, .navbar a {
+    z-index: 1;
+    font-size: 19px;
+    line-height: 23px;
+    color: #2F2F2F;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.right-0 {
+    right: 0;
+}
+.top-0 {
+    top: 0;
+}
+.hero .header {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 46px;
+    width: 402px;
+    height: 89px;
+}
+.min-vh-lg-85 {
+    min-height: 60vh;
+}
+.header-description {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8B8B8B;
+}
+button {
+    border: none;
+    padding: 10px 30px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+}
+.start-now-button {
+    color: #505050;
+    background: #F8F8F8;
+    border-radius: 50px;
+}
+@media (max-width: 1240px) {
+    .svg, .disappear-sm {
+        display: none !important;
+    }
+}
+figure {
+    z-index: -1;
+}
+.small-header {
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7A7A7A;
+}
+.number {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #1B1B1B;
+}
+.description {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #515151;
+}
+.h2-header {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    color: #1B1B1B;
+}
+.description-2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #515151;
+}
