@@ -1,6 +1,6 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\Helpers;
+namespace Nawrot\PlagiarismChecker\Helpers;
 
 /**
  * Segments sentences.

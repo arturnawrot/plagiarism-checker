@@ -1,8 +1,8 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\Entities;
+namespace Nawrot\PlagiarismChecker\Entities;
 
-use Arturek1\PlagiarismChecker\Helpers\Sentence as SentenceHelper;
+use Nawrot\PlagiarismChecker\Helpers\Sentence as SentenceHelper;
 
 class Essay
 {

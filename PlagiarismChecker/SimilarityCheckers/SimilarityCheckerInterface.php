@@ -1,6 +1,6 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\SimilarityCheckers;
+namespace Nawrot\PlagiarismChecker\SimilarityCheckers;
 
 interface SimilarityCheckerInterface
 {

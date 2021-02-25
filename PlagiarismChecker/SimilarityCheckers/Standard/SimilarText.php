@@ -1,8 +1,8 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\SimilarityCheckers\Standard;
+namespace Nawrot\PlagiarismChecker\SimilarityCheckers\Standard;
 
-use Arturek1\PlagiarismChecker\SimilarityCheckers\SimilarityCheckerInterface;
+use Nawrot\PlagiarismChecker\SimilarityCheckers\SimilarityCheckerInterface;
 
 class SimilarText implements SimilarityCheckerInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker;
+namespace Nawrot\PlagiarismChecker;
 
-use Arturek1\PlagiarismChecker\DataProviders\DataProviderInterface;
-use Arturek1\PlagiarismChecker\Entities\Essay;
-use Arturek1\PlagiarismChecker\Entities\Report;
+use Nawrot\PlagiarismChecker\DataProviders\DataProviderInterface;
+use Nawrot\PlagiarismChecker\Entities\Essay;
+use Nawrot\PlagiarismChecker\Entities\Report;
 
 class PlagiarismChecker
 {

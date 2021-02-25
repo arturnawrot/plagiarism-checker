@@ -1,7 +1,7 @@
 <?php
 // https://github.com/vanderlee/php-sentence/blob/master/src/Multibyte.php
 
-namespace Arturek1\PlagiarismChecker\Helpers;
+namespace Nawrot\PlagiarismChecker\Helpers;
 
 /**
  * Multibyte-safe utility functions

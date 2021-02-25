@@ -1,8 +1,8 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\DataProviders;
+namespace Nawrot\PlagiarismChecker\DataProviders;
 
-use Arturek1\PlagiarismChecker\Exceptions\NoFreeWorkerAvailable;
+use Nawrot\PlagiarismChecker\Exceptions\NoFreeWorkerAvailable;
 
 class DataProviderPool
 {

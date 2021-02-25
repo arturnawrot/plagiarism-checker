@@ -1,6 +1,6 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\Exceptions;
+namespace Nawrot\PlagiarismChecker\Exceptions;
 
 use Exception;
 

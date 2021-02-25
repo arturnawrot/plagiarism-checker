@@ -1,6 +1,6 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\Entities;
+namespace Nawrot\PlagiarismChecker\Entities;
 
 abstract class BaseEntity
 {

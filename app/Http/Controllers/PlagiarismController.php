@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Arturek1\PlagiarismChecker\Entities\Essay;
-use Arturek1\PlagiarismChecker\DataProviders\Bing\BingDataProvider;
+use Nawrot\PlagiarismChecker\Entities\Essay;
+use Nawrot\PlagiarismChecker\DataProviders\Bing\BingDataProvider;
 use App\Services\PlagiarismCheckerService;
 use App\DataProviders\LocalDataProvider;
 use App\Factories\DataProviderWorkerFactory;

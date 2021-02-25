@@ -2,8 +2,8 @@
 
 namespace App\Factories;
 
-use Arturek1\PlagiarismChecker\DataProviders\DataProviderPool;
-use Arturek1\PlagiarismChecker\DataProviders\DataProviderWorker;
+use Nawrot\PlagiarismChecker\DataProviders\DataProviderPool;
+use Nawrot\PlagiarismChecker\DataProviders\DataProviderWorker;
 use GuzzleHttp\Client;
 use App\Models\Worker;
 

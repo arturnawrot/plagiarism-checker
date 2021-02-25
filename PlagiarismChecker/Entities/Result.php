@@ -1,8 +1,8 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\Entities;
+namespace Nawrot\PlagiarismChecker\Entities;
 
-use Arturek1\PlagiarismChecker\SimilarityCheckers\Standard\SimilarText;
+use Nawrot\PlagiarismChecker\SimilarityCheckers\Standard\SimilarText;
 
 class Result
 {

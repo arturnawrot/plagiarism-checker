@@ -1,6 +1,6 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\ValueObjects;
+namespace Nawrot\PlagiarismChecker\ValueObjects;
 
 class Sentence
 {

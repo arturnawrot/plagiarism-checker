@@ -2,10 +2,10 @@
 
 namespace App\Services;
 
-use Arturek1\PlagiarismChecker\PlagiarismChecker;
+use Nawrot\PlagiarismChecker\PlagiarismChecker;
 
-use Arturek1\PlagiarismChecker\DataProviders\DataProviderInterface;
-use Arturek1\PlagiarismChecker\Entities\Essay;
+use Nawrot\PlagiarismChecker\DataProviders\DataProviderInterface;
+use Nawrot\PlagiarismChecker\Entities\Essay;
 
 class PlagiarismCheckerService
 {

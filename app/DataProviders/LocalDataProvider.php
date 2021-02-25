@@ -2,8 +2,8 @@
 
 namespace App\DataProviders;
 
-use Arturek1\PlagiarismChecker\DataProviders\DataProviderInterface;
-use Arturek1\PlagiarismChecker\Entities\Result;
+use Nawrot\PlagiarismChecker\DataProviders\DataProviderInterface;
+use Nawrot\PlagiarismChecker\Entities\Result;
 use App\Models\Result as LocalResult;
 
 class LocalDataProvider implements DataProviderInterface

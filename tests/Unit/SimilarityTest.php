@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Arturek1\PlagiarismChecker\SimilarityCheckers\Standard\SimilarText;
+use Nawrot\PlagiarismChecker\SimilarityCheckers\Standard\SimilarText;
 use Tests\Traits\PopularQuotes;
 
 class SimilarityTest extends TestCase

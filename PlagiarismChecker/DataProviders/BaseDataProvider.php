@@ -1,6 +1,6 @@
 <?php
 
-namespace Arturek1\PlagiarismChecker\DataProviders;
+namespace Nawrot\PlagiarismChecker\DataProviders;
 
 use GuzzleHttp\ClientInterface;
 
