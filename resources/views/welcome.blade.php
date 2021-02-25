@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Home - Landing Page</title>
   </head>
   <body>
 
@@ -38,7 +38,7 @@
                         <div class="mb-5 mt-11">
                             <h1 class="header">First Open-Source Plagiarism Checker</h1>
                             <p class="mt-4 header-description">The first open-source and solution for K-12 institutions</p>
-                            <button class="mt-3 start-now-button">Start now!</button>
+                            <button onclick="location.href = '/tool';" class="mt-3 start-now-button">Start now!</button>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                     <p class="description-2 mt-4">
                         A few websites such Turnitin.com have a monopoly in the plagiarism checking industry.  They charge poor taxpayers how much they want. The main goal of this project is to bring an end to these monopolies and provide a free service for everyone in the world.
                     </p>
-                    <button class="mt-2 start-now-button">Try it out!</button>
+                    <button onclick="location.href = '/tool';" class="mt-2 start-now-button">Try it out!</button>
                 </div>
                 <div style="min-height: 500px;" class="disappear-sm col">
                     <figure class="svg d-none d-lg-block position-absolute right-0 pr-0 ie-main-hero">
