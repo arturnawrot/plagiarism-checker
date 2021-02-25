@@ -5,7 +5,7 @@ The first Open Source Plagiarism Checker. Depends on the [Bing Web Scraper](http
 ## Docker Installation
 
 ```bash
-git clone https://github.com/arturnawrot/plagiarism-checker.git
+git clone https://github.com/arturnawrot/plagiarism-checker.git && cd plagiarism-checker
 docker-compose up -d
 docker-compose exec php make install
 ```
