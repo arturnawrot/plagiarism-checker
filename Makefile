@@ -1,5 +1,5 @@
-install: file-permission migration generate-app-key generate-jwt-key dependency-install assets-production optimize
-install-dev: file-permission migration generate-app-key generate-jwt-key dependency-install assets-dev optimize
+install: file-permission dependency-install migration generate-app-key install-assets assets-production optimize
+install-dev: file-permission dependency-install migration generate-app-key install-assets assets-dev optimize
 
 file-permission:
 	chmod -R 777 storage
@@ -11,9 +11,6 @@ migration:
 
 generate-app-key:
 	php artisan key:generate
-
-generate-jwt-key:
-	php artisan jwt:secret
 
 dependency-install:
 	composer install
