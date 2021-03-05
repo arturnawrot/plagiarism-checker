@@ -4,33 +4,34 @@ namespace Nawrot\PlagiarismChecker\DataProviders\Bing;
 
 use Nawrot\PlagiarismChecker\DataProviders\BaseDataProvider;
 use Nawrot\PlagiarismChecker\DataProviders\DataProviderInterface;
-use Nawrot\PlagiarismChecker\Entities\Result;
+use Nawrot\PlagiarismChecker\DataProviders\Adapters\ArrayToResultAdapter;
 
 class BingDataProvider extends BaseDataProvider implements DataProviderInterface
 {
-    public function getResults(string  $sentence)
+    public function getAPIResponse(string $sentence)
     {
-        $response = $this->httpClient->request('GET', '/', [
+        return $this->httpClient->request('GET', '/', [
             'query' => ['query' => $sentence]
         ]);
+    }
 
-        $json_data = json_decode($response->getBody());
+    public function cleanArray(object $rawResults)
+    {
+        return (object) array_filter((array) $rawResults, function($values) {
+            foreach($values as $value) {
+                return !is_null($value) && $value !== ''; 
+            } 
+        });
+    }
 
-        $results = [];
+    public function getResults(string $sentence)
+    {
+        $response = $this->getAPIResponse($sentence);
+    
+        $json_data = (object) json_decode($response->getBody());
+        $json_data = $this->cleanArray($json_data);
 
-        foreach($json_data as $result)
-        {
-            if(!is_string($result->description) OR empty($result->description))
-                continue;
-
-            $results[] = (new Result(
-                $result->title,
-                $result->description,
-                $sentence,
-                $result->url
-            ));
-        }
-
-        return $results;
+        $adapter = new ArrayToResultAdapter();
+        return $adapter->getResults($json_data, $sentence);
     }
 }
