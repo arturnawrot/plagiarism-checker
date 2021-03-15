@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Unit;
 
 use Nawrot\PlagiarismChecker\DataProviders\Bing\BingDataProvider;
 use Nawrot\PlagiarismChecker\DataProviders\Adapters\ArrayToResultAdapter;
