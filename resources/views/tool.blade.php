@@ -111,7 +111,9 @@
               html = html + sentenceToHtml(sentence, i);
 
               try {
-                request(sentence, i)
+                setTimeout(function(){
+                  request(sentence, i);
+                }, 150);
               } catch (error) {
                 //  ...
               }
