@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // The landing page has some issues with responsiveness
+    // return view('welcome');
+    return view('tool');
 });
 
 Route::get('/tool', function () {

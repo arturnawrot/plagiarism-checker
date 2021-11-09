@@ -18,6 +18,10 @@ class SimilarText implements SimilarityCheckerInterface
 
     public function getPercentage(string $string1, string $string2): int
     {
+        if(strpos($string1, $string2) !== false) {
+            return 100;
+        }
+
         similar_text($string1, $string2, $percentage);
         return (int) $percentage;
     }
